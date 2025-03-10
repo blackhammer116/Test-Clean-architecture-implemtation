@@ -17,6 +17,23 @@ The project is divided into several layers:
 3. **Infrastructure Layer**: Provides concrete implementations for data access and external services.
 4. **Presentation Layer**: Handles user interactions and presents data to the user.
 
+- For this project I've selected to implement it for bank management's "Account" entity. As discussed above
+ this entity will have its own actions, use case, interface adapters and controller all in which are included in a separate folders (or layers if we're being technical). The file structure looks like this:
+
+ ```
+ |- entities
+ |      |---- account.py
+ |- interface_adapters
+ |      |----account_repository.py
+ |- use_cases
+ |      |----transfer_funds.py
+ |- tests
+ |      |----test_account.py
+ |      |----test_in_memory_account_repository.py
+ |      |----test_transfer_funds.py
+ |- main.py
+ ```
+
 ## Prerequisites
 
 To run this project, you will need:

@@ -55,6 +55,3 @@ Make sure you have these installed and properly configured on your machine.
     pytest tests/
     ```
 
-## Contact
-
-For any questions or feedback, please contact [yourname@example.com](mailto:yourname@example.com).
